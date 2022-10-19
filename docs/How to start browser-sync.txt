@@ -1,0 +1,3 @@
+cd to repo
+execute this command in terminal:
+     browser-sync start --server --directory --files "**/*"

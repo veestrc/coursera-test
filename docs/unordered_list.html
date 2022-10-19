@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'> 
+    <head>
+        <meta charset=utf-8>
+        <title>Unordered Lists</title>
+        <script>
+            const changeLang = (languageCode) => {
+             document.documentElement.setAttribute("lang", languageCode);
+            };
+          </script>
+    </head>
+    <body>
+        <div>
+            <button onclick="changeLang('es')">Espanol</button>
+            <button onclick="changeLang('en')">English</button>
+            <button onclick="changeLang('fr')">French</button>
+          </div>
+        <h1>Unordered list</h1>
+        <div>
+            My typical dinner shopping list:
+            <ul>
+            <li>Milk</li>
+            <li>Donuts</li>
+            <li>Cookies
+                <ul>
+                <li>Chocolate</li>
+                <li>Sugar</li>
+                <li>Peanut Butter</li>
+                </ul>
+            </li>
+            <li>Pepto Bismol</li>
+        </ul>
+        </div>
+    </body>
+    </html>
