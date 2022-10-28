@@ -1,0 +1,342 @@
+body {
+    font-size: 16px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+  }
+  /*** Header ***/
+  #header-nav{
+    background-color:#CCCCCC;
+
+    border: 1px black solid;
+
+ 
+  }
+  
+  #navbar-header{
+    border: 1px red solid;
+  }
+  .navbar-brand{
+    padding-top: 25px;
+
+  }
+  
+  .navbar-brand h1{/* Company name */
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: -12px;
+  margin-bottom: 0;
+  line-height: .75;
+  }
+
+  h2{
+    font-weight: bold;
+  }
+  
+  .navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+  }
+  
+  #nav-list{
+    margin-top: 10px;
+  }
+  
+  #nav-list a {
+    color: black;
+    text-align: center;
+  }
+  
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  
+  #nav-list a span {
+    font-size: 1.8em;
+  }
+  
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #61122F;
+  }
+  
+  .navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -40px;
+    
+  }
+
+  .col-xxs-12 > .title{
+    text-align: center;
+  }
+
+  /* End Header */
+
+  /* Home page */
+
+section {
+
+    position: relative;
+    background-color: #FFE4C4;
+    border: 1px solid #000000;
+    width: 300px;
+    height: 1000px;
+    padding: 5px 15px 10px 15px;
+    /*float: left;*/
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+.container-fluid > section{
+    width: 97%;
+    margin: 15px 0 0px 20px;
+    text-align: center;
+}
+
+.h2, h2.title{
+   font-size: 1.25em;
+   font-weight: bold;
+}
+
+.container-fluid >section {
+    margin-top: 30px;
+}
+
+section.row > div{
+    top: -15px;
+}
+
+hr{
+  color: #000000;
+}
+
+.text-center{
+  margin-top: -10px;
+}
+
+section.row{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.col-xxs-12{
+
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: justify;
+}
+
+/* End home page */
+
+/******** Media querires ********/
+  
+  
+  /* Large devices (desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+  
+    .container-fluid >section {
+       width: 100%;
+       margin-left: 2px;
+       padding: 5px 1px 10px 1px;
+      }
+    section.row >div{
+      margin-top: -5px;
+      
+    }
+    .navbar-brand h1{
+      font-size: 9vw;
+
+    }
+    
+
+  }
+
+    /* Medium devices (tablets, 768px and up to 1199px) The navbar toggle appears at this breakpoint */
+    @media (min-width: 992px)  and (max-width: 1199px) {  
+      /* Header */
+        ul#nav-list{
+          margin-top: 5px;
+        }
+        .text-center{
+          font-size: 1.5em;
+        }
+        .navbar-brand h1{
+          font-size: 1.8em;
+    
+        }
+      /* End Header */
+  
+      /* Home page */
+  
+      /* End home page */
+    }
+
+     /* Small devices (landscape phones, 544px and up to 991px) */
+  @media (min-width: 768px) and (max-width: 991px){  
+    /* Header */
+
+    .text-center{
+      font-size: 1.3em;
+      margin-left: 25px;
+    }
+    .navbar-brand h1{
+      font-size: 1.6em;
+
+    }
+        .col-xxs-12 > .title{
+      margin-top: 15px;
+      font-size: 1.7vw;
+    }
+
+    .col-xxs-12{
+
+      font-size: 1.4vw;
+    }
+
+   /* End Header */
+ 
+   /* Home page */
+
+  /* End home page */   
+
+  }
+   
+  /* Extra small devices (protrait phones, 767px and less) */
+  @media (max-width: 767px)  {  
+    /* Header */
+    ul#nav-list{
+    margin-top: -10px;
+    margin-bottom: -21px;
+    margin-left: -120px;
+    margin-right: -75px;
+    width: 145%;
+  }
+    .navbar-brand h1{
+      font-size: 4vw; /* 1 unit of vw = 1% of viewport width */
+    }
+ 
+      #collapsable-nav a { /* Collapsed nav menu gylph */
+      font-size: 3vw;
+}
+  
+      #collapsable-nav a span { /* Glyphicon */
+        font-size: 3vw;
+        margin-right: 5px;
+      }
+      hr{
+        border: .5px  #000000 solid;
+        width: 100%;
+ 
+      }
+      
+
+
+      .navbar-nav {
+        border-top: 11px solid #000000;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 5px;
+        padding-left: 20px;
+        padding-top: 15px;
+        margin-bottom: 5px;
+
+
+    }
+
+    .navbar-header button.navbar-toggle >span{
+      width: 1.4vw;
+      height: .2vh;
+      margin-right: -10px;
+    }
+
+    .navbar-header button.navbar-toggle{
+      width: 4vw;
+      height: 5vh;
+
+    }
+    /* End header */
+    
+    /* Home page */
+    .container-fluid {
+        margin-top: 30px;
+        padding: 0;
+        width: 70%;
+    }
+
+    .container-fluid >.navbar-collapse {
+      margin-right: -46px;
+      margin-left: -65px;
+  }
+
+  .navbar-collapse.in {
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+    .col-xxs-12{
+
+     font-size: 1.7vw;
+    }
+
+    .col-xxs-12 > .title{/* Food title */
+      margin-top: 15px;
+      font-size: 2.4vw;
+    }
+
+    .text-center{ /* Our Menu */
+      margin-top: -15px;
+      font-size: 3vw;
+      margin-left: 35px
+    }
+  }
+
+/* Super extra small devices (iPhone4 etc 479px) 
+/* @media (max-width: 479px){  
+    /** Header 
+    .visible-xxs {
+      display: block !important;
+    }
+    .navbar-brand h2, .h2, h2{/* Company name 
+        padding-top: 5px;
+        font-size: 5vw;
+    }
+    section.row >div{
+        font-size: 3vw;
+    }*/
+    /** End header 
+    
+    /* Home page
+
+    .col-xxs-12{
+      position: relative;
+      min-height: 1px;
+      padding-right: 5px;
+      padding-left: 5px;
+      float: left;
+      width: 100%;
+      text-align: justify;
+    }
+
+    .col-xxs-12 > .title{
+
+      text-align: center;
+      margin-top: 10px;
+    }
+    .container-fluid > .navbar-header{
+        margin-right: -30px;
+        margin-left: -30px;
+    }   
+
+    .navbar-brand h1{ /* Company name
+      font-size: 6vw;
+    }
+
+    /** End home page 
+
+}
+
+/*** End media queries ****/
+
+  
+  
+  
