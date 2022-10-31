@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"/>
+    <script>
+        console.log(x);
+    </script>
+    <title>Lecture 40</title>
+</head>
+
+<body>
+    <h1>Lecture 40</h1>
+    <script>
+        var x = "Watch me";
+        console.log(x);
+        function a () {
+            console.log("this is func a exec before it's def");
+        }
+        function vee (x,y) {
+            a();
+            return x > y;
+        }
+
+        var result = vee(5,3);
+        console.log(result);
+        var results = 0;
+        result = vee(4, results);
+        console.log(results);
+        console.log(result);
+        vee(7,9);
+        result = 7;
+        console.log(result);
+    </script>
+</body>
+
+</html>
