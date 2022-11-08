@@ -16,16 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
        document
        .getElementById("content")
        .innerHTML = message;
+
+       var titleOrig = "Lecture 54 Event Handling";
     
        if (aname === "student") {
-        var title =
-            document
-            .querySelector("#title")// or place h1 in quotes since there's only one in the doc
-            .textContent;
-        title += " is being manipulated";
-        document
-        .querySelector("#title")
-        .textContent = title;   
+        var titleNew = titleOrig;
+        titleNew += " is being manipulated";
+        document.querySelector("#title")
+          .textContent = titleNew;   
+       } else {
+        document.querySelector("#title")
+          .textContent = titleOrig;
        }
     }  
 
